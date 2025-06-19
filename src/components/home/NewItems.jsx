@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AuthorImage from "../../images/author_thumbnail.jpg";
-import nftImage from "../../images/nftImage.jpg";
 import useSWR from "swr";
 import { useKeenSlider } from "keen-slider/react";
 
@@ -10,7 +8,6 @@ const NewItems = () => {
   const { data: items = [], isLoading } = useSWR(
     "https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems"
   );
-  console.log({ items });
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
