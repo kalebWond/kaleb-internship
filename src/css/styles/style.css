@@ -16718,7 +16718,7 @@ img {
   position: relative;
 }
 
-#section-collections .slider-btn {
+.row--collections .slider-btn {
   position: absolute;
   bottom: 50%;
   border: none;

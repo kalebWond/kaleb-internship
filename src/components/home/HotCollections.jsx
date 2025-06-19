@@ -10,7 +10,6 @@ const HotCollections = () => {
   } = useSWR(
     "https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections"
   );
-  console.log({ collections });
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       loop: true,
