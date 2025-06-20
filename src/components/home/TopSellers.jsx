@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useSWR from "swr";
+import Skeleton from "../UI/Skeleton";
 
 const TopSellers = () => {
   const { data: sellers = [], isLoading } = useSWR(
@@ -22,12 +23,12 @@ const TopSellers = () => {
               {Array(12).fill().map((_, i) => (
                 <li key={i}>
                   <div style={{position: "relative"}} className="author_list_pp">
-                    <div style={{width: "50px", height: "50px", borderRadius: "50%"}} className="skeleton-box"></div>
+                    <Skeleton width="50px" height="50px" borderRadius="50%" />
                     <i className="fa fa-check"></i>
                   </div>
                   <div style={{display: "inline-block", paddingLeft: "20px"}} className="author_list_info">
-                    <div style={{width: "120px"}} className="skeleton-box"></div> <br />
-                    <div style={{width: "80px"}} className="skeleton-box"></div>
+                    <Skeleton width="120px" /> <br />
+                    <Skeleton width="80px" />
                   </div>
                 </li>
               ))}
