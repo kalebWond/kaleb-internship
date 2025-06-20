@@ -11,7 +11,7 @@ function NftItem({ nft, className, style }) {
             to={"/author/" + nft.authorId}
             data-bs-toggle="tooltip"
             data-bs-placement="top"
-            title="Creator: Monica Lucas"
+            title="Creator"
           >
             <img className="lazy" src={nft.authorImage} alt="" />
             <i className="fa fa-check"></i>
