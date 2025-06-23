@@ -15,7 +15,8 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "swr": "^2.3.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

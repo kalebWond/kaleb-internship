@@ -49,7 +49,7 @@ const ExploreItems = () => {
         ))}
       {(!isLoading && limit < items.length) && (
         <div className="col-md-12 text-center">
-          <button onClick={() => setLimit(limit+4)} id="loadmore" className="btn-main lead">
+          <button onClick={() => setLimit(limit+4)} id="loadmore" className="btn-main lead wow fadeInUp">
             Load more
           </button>
         </div>

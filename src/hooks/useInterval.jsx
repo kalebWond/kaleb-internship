@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function useInterval() {
   const [now, setNow] = useState(Date.now());
