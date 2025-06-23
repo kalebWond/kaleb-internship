@@ -11,7 +11,6 @@ const ItemDetails = () => {
     "https://us-central1-nft-cloud-functions.cloudfunctions.net/itemDetails?nftId=" +
       nftId
   );
-  console.log(nft);
 
   useEffect(() => {
     window.scrollTo(0, 0);
